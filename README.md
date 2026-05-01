@@ -143,11 +143,3 @@ Each log file captures:
 See `requirements.txt`. Key packages:
 - `requests` – HTTP REST calls
 - `python-dotenv` – `.env` file loading
-
----
-
-## ⚠️ Security Note
-
-- **Never commit your `.env` file** — it is listed in `.gitignore`
-- Use `.env.example` as a template with placeholder values
-- Rotate your API keys if they are ever accidentally exposed
