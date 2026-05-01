@@ -1,0 +1,11 @@
+2026-05-02 02:44:55 | INFO     | binance_client | Logger initialized. Log file: logs/trading_bot_20260502_024455.log
+2026-05-02 02:44:55 | INFO     | orders | Logger initialized. Log file: logs/trading_bot_20260502_024455.log
+2026-05-02 02:44:55 | INFO     | cli | Logger initialized. Log file: logs/trading_bot_20260502_024455.log
+2026-05-02 02:44:55 | INFO     | orders | Order request | symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=2000.0
+2026-05-02 02:44:55 | INFO     | binance_client | Placing order: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'recvWindow': 10000, 'price': 2000.0, 'timeInForce': 'GTC'}
+2026-05-02 02:44:55 | DEBUG    | binance_client | -> GET https://testnet.binancefuture.com/fapi/v1/time | params: {}
+2026-05-02 02:44:55 | DEBUG    | binance_client | <- 200 | {"serverTime":1777670108409}
+2026-05-02 02:44:55 | DEBUG    | binance_client | -> POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'recvWindow': 10000, 'price': 2000.0, 'timeInForce': 'GTC', 'timestamp': 1777670108409}
+2026-05-02 02:44:56 | DEBUG    | binance_client | <- 400 | {"code":-4024,"msg":"Limit price can't be lower than 2171.66."}
+2026-05-02 02:44:56 | ERROR    | binance_client | Binance API error: {'code': -4024, 'msg': "Limit price can't be lower than 2171.66."}
+2026-05-02 02:44:56 | ERROR    | orders | API error: Binance error -4024: Limit price can't be lower than 2171.66.

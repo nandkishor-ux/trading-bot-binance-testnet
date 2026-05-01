@@ -1,0 +1,5 @@
+2026-05-02 02:29:06 | INFO     | binance_client | Logger initialized. Log file: logs/trading_bot_20260502_022906.log
+2026-05-02 02:29:06 | INFO     | orders | Logger initialized. Log file: logs/trading_bot_20260502_022906.log
+2026-05-02 02:29:06 | INFO     | cli | Logger initialized. Log file: logs/trading_bot_20260502_022906.log
+2026-05-02 02:29:06 | DEBUG    | binance_client | -> GET https://testnet.binancefuture.com/fapi/v1/time | params: {}
+2026-05-02 02:29:07 | DEBUG    | binance_client | <- 200 | {"serverTime":1777669160261}

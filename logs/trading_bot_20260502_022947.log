@@ -1,0 +1,9 @@
+2026-05-02 02:29:47 | INFO     | binance_client | Logger initialized. Log file: logs/trading_bot_20260502_022947.log
+2026-05-02 02:29:47 | INFO     | orders | Logger initialized. Log file: logs/trading_bot_20260502_022947.log
+2026-05-02 02:29:47 | INFO     | cli | Logger initialized. Log file: logs/trading_bot_20260502_022947.log
+2026-05-02 02:29:47 | INFO     | orders | Order request | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-05-02 02:29:47 | INFO     | binance_client | Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-05-02 02:29:47 | DEBUG    | binance_client | -> POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1777669187501}
+2026-05-02 02:29:48 | DEBUG    | binance_client | <- 401 | {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-02 02:29:48 | ERROR    | binance_client | Binance API error: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action'}
+2026-05-02 02:29:48 | ERROR    | orders | API error: Binance error -2015: Invalid API-key, IP, or permissions for action

@@ -1,0 +1,10 @@
+2026-05-02 02:44:14 | INFO     | binance_client | Logger initialized. Log file: logs/trading_bot_20260502_024414.log
+2026-05-02 02:44:14 | INFO     | orders | Logger initialized. Log file: logs/trading_bot_20260502_024414.log
+2026-05-02 02:44:14 | INFO     | cli | Logger initialized. Log file: logs/trading_bot_20260502_024414.log
+2026-05-02 02:44:14 | INFO     | orders | Order request | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-05-02 02:44:14 | INFO     | binance_client | Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'recvWindow': 10000}
+2026-05-02 02:44:14 | DEBUG    | binance_client | -> GET https://testnet.binancefuture.com/fapi/v1/time | params: {}
+2026-05-02 02:44:15 | DEBUG    | binance_client | <- 200 | {"serverTime":1777670068239}
+2026-05-02 02:44:15 | DEBUG    | binance_client | -> POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'recvWindow': 10000, 'timestamp': 1777670068239}
+2026-05-02 02:44:15 | DEBUG    | binance_client | <- 200 | {"orderId":13097660633,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"dMFQfKVL7rNLEIzh6b5ytz","price":"0.00","avgPrice":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BU
+2026-05-02 02:44:15 | INFO     | binance_client | Order response: {'orderId': 13097660633, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'dMFQfKVL7rNLEIzh6b5ytz', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1777670068415}

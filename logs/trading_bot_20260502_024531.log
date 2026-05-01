@@ -1,0 +1,10 @@
+2026-05-02 02:45:31 | INFO     | binance_client | Logger initialized. Log file: logs/trading_bot_20260502_024531.log
+2026-05-02 02:45:31 | INFO     | orders | Logger initialized. Log file: logs/trading_bot_20260502_024531.log
+2026-05-02 02:45:31 | INFO     | cli | Logger initialized. Log file: logs/trading_bot_20260502_024531.log
+2026-05-02 02:45:31 | INFO     | orders | Order request | symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=2500.0
+2026-05-02 02:45:31 | INFO     | binance_client | Placing order: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'recvWindow': 10000, 'price': 2500.0, 'timeInForce': 'GTC'}
+2026-05-02 02:45:31 | DEBUG    | binance_client | -> GET https://testnet.binancefuture.com/fapi/v1/time | params: {}
+2026-05-02 02:45:31 | DEBUG    | binance_client | <- 200 | {"serverTime":1777670144360}
+2026-05-02 02:45:31 | DEBUG    | binance_client | -> POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'recvWindow': 10000, 'price': 2500.0, 'timeInForce': 'GTC', 'timestamp': 1777670144360}
+2026-05-02 02:45:31 | DEBUG    | binance_client | <- 200 | {"orderId":8677268078,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"B3gKqwXRy8QRqq6VIKaxT4","price":"2500.00","avgPrice":"0.00","origQty":"0.100","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL"
+2026-05-02 02:45:31 | INFO     | binance_client | Order response: {'orderId': 8677268078, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'B3gKqwXRy8QRqq6VIKaxT4', 'price': '2500.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1777670144526}
